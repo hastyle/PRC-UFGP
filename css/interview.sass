@@ -1,0 +1,126 @@
+.interview-wrapper
+  position: relative
+  height: 696px
+  width: 100%
+  background:
+    image: url(imgs/interview-background.png)
+    size: cover
+    attachment:fixed
+  overflow: hidden
+  &:before
+    content: ''
+    position: absolute
+    width: 0
+    height: 0
+    border-style: solid
+    border-width: 200px 100vw 0 0
+    border-color: #e2e2e2 transparent transparent transparent
+    top: 0
+    left: 0
+
+  &:after
+    content: ''
+    position: absolute
+    width: 0
+    height: 0
+    border-style: solid
+    border-width: 0 0 200px 100vw
+    border-color: transparent transparent #e2e2e2 transparent
+    bottom: 0
+    right: 0
+
+.interview-info
+  position: relative
+  width: 300px
+  height: 410px
+  background-color: transparentize(#fff, 0.5)
+  border-radius: 10px
+  margin: 140px auto 0 auto
+  box-shadow: 1px 1px 10px rgba(165,124,116,0.44)
+  padding: 5px
+  animation: interview 1s
+
+.interview-picture-wrapper
+  position: relative
+  margin: 0px auto
+  width: 150px
+  height: 150px
+  border-radius: 50%
+  background-color: rgba(19,63,81,0.44)
+
+.interview-picture-border
+  position: relative
+  width: 85%
+  height: 85%
+  background-color: rgba(215,41,41,0.44)
+  border-radius: 50%
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+
+.interview-picture
+  position: relative
+  width: 85%
+  height: 85%
+  background-image: url(imgs/interview.png)
+  background-position: center
+  background-size: cover
+  border-radius: 50%
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+
+.interview-title
+  margin: 5px auto
+  text-align: center
+  color: #133f51
+
+.interview-position
+  margin: 10px auto
+  text-align: center
+  color:#d72929
+
+.interview-description
+  margin: 10px auto
+  text-align: center
+  color: #2e3c41
+
+
+
+.interview-button
+  display: block
+  position: relative
+  border-radius: 15px
+  border: 1px solid #133f51
+  padding: 5px 20px
+  color: #133f51
+  transition: all 0.4s ease-in-out
+  margin: 0 auto
+  max-width: 130px
+
+  &:hover
+    background-color: #000
+    cursor: pointer
+
+
+
+
+.cont
+  height: 1000px
+  width:1px
+
+.padding
+  padding: 0
+
+
+@keyframes interview
+  0%
+    transform: scale(0,0) translateY(100px)
+    opacity: 0
+
+  90%
+    transform: scale(0.01,1) translateY(10px)
+    opacity: 1
+
+  100%
+    transform: scale(1,1) translateY(0px)
