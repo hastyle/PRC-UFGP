@@ -22,15 +22,18 @@
   border-width: 50px 50px 0 50px;
   border-color: #2a2d2e transparent transparent transparent;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .up {
   position: relative;
   width: 50px;
   height: 50px;
+  background: -webkit-linear-gradient(top, #347e9c 0%, #226681 100%);
   background: linear-gradient(to bottom, #347e9c 0%, #226681 100%);
-  transform: rotate(45deg) translateX(-50%);
+  -webkit-transform: rotate(45deg) translateX(-50%);
+          transform: rotate(45deg) translateX(-50%);
   left: 49.5%;
   top: -8px;
   overflow: hidden;
@@ -42,6 +45,7 @@
   position: absolute;
   width: 100%;
   height: 100%;
+  background: -webkit-linear-gradient(top left, #fff 0%, transparent 100%);
   background: linear-gradient(to bottom right, #fff 0%, transparent 100%);
   opacity: 0.3;
 }
@@ -50,10 +54,15 @@
   position: relative;
   width: 100%;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-top: 15px;
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
   color: white;
 }
 
@@ -143,7 +152,8 @@
   border-radius: 60px;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .button::after {
@@ -155,7 +165,8 @@
   border-radius: 60px;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .plant-title-wrapper {
@@ -173,7 +184,8 @@
   z-index: 1;
   top: 50%;
   left: 13%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   opacity: 0.3;
 }
 
@@ -183,7 +195,8 @@
   margin: 0;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   color: white;
   font-size: 35px;
 }
@@ -207,7 +220,8 @@
   width: 30px;
   height: 30px;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   border-top: 15px solid #e2e2e2;
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
@@ -220,7 +234,8 @@
   height: 30px;
   left: 50%;
   top: 0;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   border-top: 35px solid rgba(0, 0, 0, 0.4);
   border-left: 35px solid transparent;
   border-right: 35px solid transparent;
@@ -245,7 +260,8 @@
   border-radius: 60px;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .plants-button-bg {
@@ -258,7 +274,8 @@
   border-radius: 60px;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .plants-name {
@@ -372,7 +389,8 @@ li {
   height: 40px;
   top: 40%;
   right: -13px;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   color: #db8bc6;
   background-color: #442b3d;
   border-radius: 50%;
