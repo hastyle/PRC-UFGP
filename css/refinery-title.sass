@@ -1,0 +1,68 @@
+.button-space
+  width: 100%
+
+.button-centering
+  display: block
+  margin: 0 auto
+
+.button
+  position: relative
+  margin-top: 170px
+  margin-bottom: 170px
+  max-width: 400px
+  padding: 38px 50px
+  border: 1px solid #950e0e
+  background-color: #d92727
+  border-radius: 60px
+  height: 80px
+
+  &::before
+    content: ''
+    position: absolute
+    width: 95%
+    height: 99%
+    background-color: #d41b1b
+    border-radius: 60px
+    top:50%
+    left: 50%
+    transform: translate(-50%,-50%)
+
+  &::after
+    content: ''
+    position: absolute
+    width: 80%
+    height: 80%
+    background-color: #eb1a1a
+    border-radius: 60px
+    top:50%
+    left: 50%
+    transform: translate(-50%,-50%)
+
+
+.plant-title-wrapper
+  position: relative
+  width: 100%
+  height: 100px
+  top: -50px
+  margin-left: 25px
+
+.plant-image
+  position: absolute
+  width: 50px
+  height: 50px
+  z-index: 1
+  top: 50%
+  left:13%
+  transform: translate(-50%,-50%)
+  opacity: 0.3
+
+
+.plant-title
+  position: absolute
+  z-index: 1
+  margin: 0
+  top: 50%
+  left:50%
+  transform: translate(-50%,-50%)
+  color: white
+  font-size: 35px

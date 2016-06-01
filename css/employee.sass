@@ -1,0 +1,313 @@
+.img-wrapper
+  position: relative
+
+
+.emp-whole-wrapper
+  position: relative
+  width: 100%
+  max-width: 1100px
+  margin: 0 auto
+  height: 300px
+
+
+.emp-picture-wrapper
+  position: relative
+  width: 250px
+  float: left
+  height: 300px
+
+
+.emp-1-picture
+  width: 85%
+  vertical-align: middle
+  position: absolute
+  top:50%
+  left: 50%
+  transform: translate(-50%,-50%)
+
+
+.card
+  width: 70%
+  height: 300px
+  background-color: #fff
+  position: relative
+  float: left
+
+  .card-1
+    position: absolute
+    width: 95%
+    height: 100%
+    background-color: rgba(255,255,255,0.57)
+    z-index: -1
+    bottom: -3px
+    left: 50%
+    transform: translateX(-50%)
+
+  .card-2
+    position: absolute
+    width: 88%
+    height: 100%
+    background-color: rgba(216,216,216,0.5)
+    z-index: -1
+    bottom: -7px
+    left: 50%
+    transform: translateX(-50%)
+
+.margin
+  margin-top: 100px
+
+ul.card-list
+  margin: 0
+  padding: 0
+
+
+.circles
+  position: absolute
+  list-style: none
+  padding: 0px
+  bottom: -20px
+  left:50%
+  transform: translateX(-50%)
+li
+  display: inline-block
+  margin-left: 0px
+
+.circle
+  width: 10px
+  height: 10px
+  border-radius: 50%
+  background-color: #d0d0cf
+  transition: all 0.4s ease-in-out
+
+
+.activated
+  width: 13px
+  height: 13px
+  border-radius: 50%
+  background-color: #5e6063
+
+
+.card-content-wrapper
+  width: 643px
+  height: 300px
+  position: absolute
+  left: 50%
+  transform: translateX(-50%)
+
+.employee-content-wrapper
+  width: 100%
+  height: 100%
+  animation: employee-content-wrapper-fadeIn 2s
+
+.emp-1-name
+  font-size: 30px
+  margin-top: 0px
+  padding-top: 15px
+  color: #3d6889
+
+.emp-1-title
+  color: #932525
+
+.emp-1-description
+  color: #7a7c7d
+  line-height: 30px
+  padding-left: 10px
+  padding-right: 10px
+
+.line
+  width: 40%
+  height: 5px
+  background-color: #3d6889
+  margin: 0 auto
+  margin-bottom: 10px
+  position: relative
+
+.emp-like
+  width: 140px
+  margin: 0 auto
+
+.welcome
+  display: inline-block
+  color: #7a7c7d
+
+#Layer_1
+  display: inline-block
+  vertical-align: top
+
+#Layer_2
+  position: absolute
+  top: 50%
+  left:50%
+  transform: translate(-50%,-50%)
+
+.stroke-1
+  width: 15px
+  height: 80px
+  background-color: #3d6889
+  position: absolute
+  left: 0
+  bottom: 0
+
+.stroke-2
+  width: 80px
+  height: 15px
+  background-color: #3d6889
+  position: absolute
+  left: 0
+  bottom: 0
+
+.stroke-3
+  width: 15px
+  height: 80px
+  background-color: #3d6889
+  position: absolute
+  right: 0
+  top: 0
+
+.stroke-4
+  width: 80px
+  height: 15px
+  background-color: #3d6889
+  position: absolute
+  right: 0
+  top: 0
+
+.stroke-wrapper-1
+  position: absolute
+  bottom: 0
+  left: 0
+  animation: employee-card-stroke-1-fadeIn 2s
+  animation-fill-mode: forwards
+
+.fadein-stroke1
+  animation: employee-card-stroke-1-fadeIn 2s
+  animation-fill-mode: forwards
+
+.fadeout-stroke1
+  animation: employee-card-stroke-1-fadeOut 1.7s
+  animation-fill-mode: forwards
+
+.stroke-wrapper-2
+  position: absolute
+  top: 0
+  right: 0
+  animation: employee-card-stroke-2-fadeIn 2s
+  animation-fill-mode: forwards
+
+.fadein-stroke2
+  animation: employee-card-stroke-2-fadeIn 2s
+  animation-fill-mode: forwards
+
+.fadeout-stroke2
+  animation: employee-card-stroke-2-fadeOut 1.7s
+  animation-fill-mode: forwards
+
+.fadein-picture
+  animation: employee-picture-fadeIn 2s
+  animation-fill-mode: forwards
+
+.fadeout-picture
+  animation: employee-picture-fadeOut 2s
+  animation-fill-mode: forwards
+
+.fadeout-description
+  animation: employee-content-wrapper-fadeOut 2s
+  animation-fill-mode: forwards
+
+.fadein-description
+  animation: employee-content-wrapper-fadeIn 2s
+  animation-fill-mode: forwards
+
+@keyframes employee-picture-fadeIn
+  0%
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-50%) scale(0)
+    opacity: 0
+
+  100%
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-50%) scale(1)
+    opacity: 1
+
+@keyframes employee-picture-fadeOut
+  0%
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-50%) scale(1)
+    opacity: 1
+
+  100%
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-50%) scale(0)
+    opacity: 0
+
+@keyframes employee-card-stroke-1-fadeIn
+
+  0%
+    bottom: 50%
+    left: 50%
+    transform: translate(-50%,-50%)
+
+  100%
+    bottom: 0
+    left: 0
+
+@keyframes employee-card-stroke-2-fadeIn
+
+  0%
+    top: 50%
+    right: 50%
+    transform: translate(-50%,-50%)
+
+  100%
+  top: 0
+  right: 0
+
+@keyframes employee-content-wrapper-fadeIn
+
+  0%
+    transform: scale(0)
+    transform-origin: center
+    opacity: 0.2
+
+  100%
+    transform: scale(1)
+    transform-origin: center
+    opacity: 1
+
+@keyframes employee-card-stroke-1-fadeOut
+
+  0%
+    bottom: 0
+    left: 0
+  100%
+    bottom: 50%
+    left: 50%
+    transform: translate(-50%,-50%)
+
+
+@keyframes employee-card-stroke-2-fadeOut
+
+  0%
+    top: 0
+    right: 0
+
+  100%
+    top: 50%
+    right: 50%
+    transform: translate(-50%,-50%)
+
+
+
+@keyframes employee-content-wrapper-fadeOut
+
+  0%
+    transform: scale(1)
+    opacity: 1
+
+  100%
+    transform: scale(0)
+    opacity: 0.2

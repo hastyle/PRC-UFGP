@@ -1,0 +1,112 @@
+.blog-wrapper
+  width: 978px
+  margin: 0 auto
+
+.blogpost1
+  position: relative
+  width: 100%
+  max-width: 326px
+  height: 326px
+  background:
+    image:url('imgs/blogpost1.png')
+    repeat:no-repeat
+    size:cover
+    color: #fff
+  overflow: hidden
+  float:left
+  &:hover .blog-content-wrapper
+    transform: translateY(0%)
+    opacity: 1
+
+.blogpost2
+  position: relative
+  width: 100%
+  max-width: 326px
+  height: 326px
+  background:
+    image:url('imgs/blogpost2.png')
+    repeat:no-repeat
+    size:cover
+    color: #fff
+  overflow: hidden
+  float:left
+  &:hover .blog-content-wrapper
+    transform: translateY(0%)
+    opacity: 1
+
+.blogpost3
+  position: relative
+  width: 100%
+  max-width: 326px
+  height: 326px
+  background:
+    image:url('imgs/blogpost3.png')
+    repeat:no-repeat
+    size:cover
+    color: #fff
+  overflow: hidden
+  float:left
+  &:hover .blog-content-wrapper
+    transform: translateY(0%)
+    opacity: 1
+
+.blog-content-wrapper
+  position: absolute
+  width: 100%
+  height: 100%
+  transform: translateY(100%)
+  transition: all 0.4s ease
+  opacity: 0
+  transition: all 1s ease
+
+
+
+  .blog-background
+    position: absolute
+    width: 100%
+    height: 100%
+    background: linear-gradient(to bottom, #15183f 0%, #3a59b9 100%)
+    opacity: 0.6
+    z-index: 0
+
+  .blog-author-picture
+    position: relative
+    width: 100px
+    height: 100px
+    background-image: url('imgs/interview.png')
+    background-size: cover
+    border-radius: 50%
+    margin: 35px auto 2px auto
+    z-index: 1
+    transition: all 0.4s ease
+
+
+
+  .blog-author-name
+    position: relative
+    text-align: center
+    color: white
+    text-shadow: 0px 10px 16px rgba(0, 0, 0, 0.26)
+    z-index: 1
+    margin-top: 18px
+
+  .blog-author-title
+    position: relative
+    text-align: center
+    color: white
+    text-shadow: 0px 10px 16px rgba(0, 0, 0, 0.26)
+    z-index: 1
+
+  .blog-button
+    display: block
+    max-width: 150px
+    position: relative
+    border: 1px solid white
+    border-radius: 20px
+    padding: 5px 30px
+    margin: 30px auto 0 auto
+    color: white
+
+.margin
+  padding: 0
+  margin: 0 auto

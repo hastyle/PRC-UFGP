@@ -1,0 +1,82 @@
+.plant-background {
+  position: relative;
+  background-image: url(imgs/plant-background.png);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 600px;
+}
+
+.arrowbg {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-top: 15px solid #e2e2e2;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  z-index: 1;
+}
+
+.arrowsm {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  border-top: 35px solid rgba(0, 0, 0, 0.4);
+  border-left: 35px solid transparent;
+  border-right: 35px solid transparent;
+}
+
+.plants-title {
+  color: white;
+}
+
+.plants-button-wrapper {
+  position: relative;
+  width: 200px;
+  height: 100px;
+}
+
+.plants-button-sm {
+  position: absolute;
+  width: 100%;
+  padding: 15px 25px;
+  border: 1px solid #950e0e;
+  background-color: #d92727;
+  border-radius: 60px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.plants-button-bg {
+  position: absolute;
+  width: 120%;
+  height: 70%;
+  padding: 15px 25px;
+  background-color: #212e34;
+  opacity: 0.5;
+  border-radius: 60px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.plants-name {
+  color: white;
+  font-size: 15px;
+}
+
+.plants-name {
+  margin: 0;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 45px;
+}
