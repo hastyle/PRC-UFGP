@@ -1015,7 +1015,7 @@ a:hover {
 .divider-centering {
   height: 100px;
   width: 605px;
-  margin: 110px auto;
+  margin: 100px auto;
 }
 
 .divider-wrapper {
@@ -1179,7 +1179,7 @@ ul.card-list {
   position: absolute;
   list-style: none;
   padding: 0px;
-  bottom: -20px;
+  bottom: -17px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
