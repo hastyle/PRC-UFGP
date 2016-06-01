@@ -1015,7 +1015,7 @@ a:hover {
 .divider-centering {
   height: 100px;
   width: 605px;
-  margin: 100px auto;
+  margin: 110px auto;
 }
 
 .divider-wrapper {
@@ -1023,6 +1023,7 @@ a:hover {
   height: 100px;
   position: relative;
   display: inline-block;
+
 }
 
 .divider-wrapper .divider-square {
