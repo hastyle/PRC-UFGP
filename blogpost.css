@@ -87,7 +87,8 @@
 }
 
 .hero-image .blog-content-wrapper .blog-button:hover {
-  animation: ButtonChange 0.1s linear forwards;
+  -webkit-animation: ButtonChange 0.1s linear forwards;
+          animation: ButtonChange 0.1s linear forwards;
 }
 
 .hero-image .blog-content-wrapper .blog-image {
@@ -97,7 +98,8 @@
   margin-bottom: 20px;
   margin-top: 20px;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .hero-image .blog-content-wrapper .form-wrapper {
@@ -110,6 +112,13 @@
 
 .hero-image .blog-content-wrapper .form-wrapper .form-extend {
   width: 100%;
+}
+
+@-webkit-keyframes ButtonChange {
+  100% {
+    background-color: #ed9519;
+    color: white;
+  }
 }
 
 @keyframes ButtonChange {
@@ -147,7 +156,8 @@
   border-radius: 100%;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .blog-bg .blog-line {
