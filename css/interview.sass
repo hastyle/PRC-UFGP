@@ -28,6 +28,7 @@
     border-color: transparent transparent #e2e2e2 transparent
     bottom: 0
     right: 0
+    z-index: 1
 
 .interview-info
   position: relative
@@ -38,7 +39,7 @@
   margin: 140px auto 0 auto
   box-shadow: 1px 1px 10px rgba(165,124,116,0.44)
   padding: 5px
-  animation: interview 1s
+  z-index: 2
 
 .interview-picture-wrapper
   position: relative
@@ -89,17 +90,18 @@
 
 .interview-button
   display: block
+  max-width: 150px
   position: relative
-  border-radius: 15px
-  border: 1px solid #133f51
-  padding: 5px 20px
-  color: #133f51
-  transition: all 0.4s ease-in-out
-  margin: 0 auto
-  max-width: 130px
+  border: 1px solid #d72929
+  border-radius: 20px
+  padding: 5px 30px
+  margin: 20px auto 0 auto
+  color: #d72929
+  background: transparent
 
   &:hover
-    background-color: #000
+    background-color: #d72929
+    color: white
     cursor: pointer
 
 
@@ -111,16 +113,3 @@
 
 .padding
   padding: 0
-
-
-@keyframes interview
-  0%
-    transform: scale(0,0) translateY(100px)
-    opacity: 0
-
-  90%
-    transform: scale(0.01,1) translateY(10px)
-    opacity: 1
-
-  100%
-    transform: scale(1,1) translateY(0px)
