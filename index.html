@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="master.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
@@ -16,10 +17,11 @@
   </head>
   <body>
     <div class="container-fluid padding">
+      <!--include ./html/loader.jade-->
       <div class="row">
         <div class="col-sm-12 padding">
-          <div class="embed-responsive embed-responsive-16by9 repon-video">
-            <video width="1" height="1" autoplay>
+          <div class="embed-responsive repon-video">
+            <video width="1" height="1" poster="imgs/LOGO.png" autoplay>
               <source src="banner2_6.mp4">
             </video>
           </div>
@@ -31,7 +33,7 @@
             <div class="sl-slider">
               <div data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2" class="sl-slide bg-1">
                 <div class="sl-slide-inner">
-                  <div data-icon="H" class="deco"><img src="imgs/tank-1.svg" class="quote-icon"></div>
+                  <div data-icon class="deco"><img src="imgs/tank-1.svg" class="quote-icon"></div>
                   <h2>A bene placito</h2>
                   <blockquote>
                     <p>You have just dined, and however scrupulously the slaughterhouse is concealed in the graceful distance of miles, there is complicity.</p>
@@ -41,7 +43,7 @@
               </div>
               <div data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5" class="sl-slide bg-2">
                 <div class="sl-slide-inner">
-                  <div data-icon="P" class="deco"><img src="imgs/tank-1.svg" class="quote-icon"></div>
+                  <div data-icon class="deco"><img src="imgs/tank-1.svg" class="quote-icon"></div>
                   <h2>Regula aurea</h2>
                   <blockquote>
                     <p>Until he extends the circle of his compassion to all living things, man will not himself find peace.</p>
@@ -51,7 +53,7 @@
               </div>
               <div data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1" class="sl-slide bg-3">
                 <div class="sl-slide-inner">
-                  <div data-icon="O" class="deco"><img src="imgs/tank-1.svg" class="quote-icon"></div>
+                  <div data-icon class="deco"><img src="imgs/tank-1.svg" class="quote-icon"></div>
                   <h2>Dum spiro, spero</h2>
                   <blockquote>
                     <p>Thousands of people who say they 'love' animals sit down once or twice a day to enjoy the flesh of creatures who have been utterly deprived of everything that could make their lives worth living and who endured the awful suffering and the terror of the abattoirs.</p>
@@ -61,7 +63,7 @@
               </div>
               <div data-orientation="vertical" data-slice1-rotation="-5" data-slice2-rotation="25" data-slice1-scale="2" data-slice2-scale="1" class="sl-slide bg-4">
                 <div class="sl-slide-inner">
-                  <div data-icon="I" class="deco"><img src="imgs/tank-1.svg" class="quote-icon"></div>
+                  <div data-icon class="deco"><img src="imgs/tank-1.svg" class="quote-icon"></div>
                   <h2>Donna nobis pacem</h2>
                   <blockquote>
                     <p>The human body has no more need for cows' milk than it does for dogs' milk, horses' milk, or giraffes' milk.</p>
@@ -91,7 +93,7 @@
             <div class="divider-wrapper">
               <div class="divider-square">
                 <div class="divider-smsquare">
-                  <h4 class="divider-contint">1</h4>
+                  <h4 class="divider-contint">4</h4>
                 </div>
               </div>
               <div class="divider-line"></div>
@@ -99,7 +101,7 @@
             </div>
             <div class="title-wrapper">
               <div class="divider-title">
-                <h2 class="divider-title">Meet The New Comers</h2>
+                <h2 class="divider-title">Mohammed Ahmed Alhazmi</h2>
               </div>
             </div>
           </div>
@@ -145,7 +147,7 @@
                             <p class="emp-1-description text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
                             <div class="emp-like">
                               <h5 class="welcome">Welcome Me!&nbsp;</h5>
-                              <button class="icobutton icobutton--heart"><span aria-hidden="true" class="fa fa-heart"></span></button>
+                              <div class="icobutton icobutton--heart"><span aria-hidden="true" class="fa fa-heart"></span></div>
                             </div>
                           </div>
                   </li>
@@ -166,7 +168,7 @@
                             <p class="emp-1-description text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
                             <div class="emp-like">
                               <h5 class="welcome">Welcome Me!&nbsp;</h5>
-                              <button class="icobutton icobutton--heart"><span aria-hidden="true" class="fa fa-heart"></span></button>
+                              <div class="icobutton icobutton--heart"><span aria-hidden="true" class="fa fa-heart"></span></div>
                             </div>
                           </div>
                   </li>
@@ -187,7 +189,7 @@
                             <p class="emp-1-description text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
                             <div class="emp-like">
                               <h5 class="welcome">Welcome Me!&nbsp;</h5>
-                              <button class="icobutton icobutton--heart"><span aria-hidden="true" class="fa fa-heart"></span></button>
+                              <div class="icobutton icobutton--heart"><span aria-hidden="true" class="fa fa-heart"></span></div>
                             </div>
                           </div>
                   </li>
@@ -212,7 +214,7 @@
             <div class="divider-wrapper">
               <div class="divider-square">
                 <div class="divider-smsquare">
-                  <h4 class="divider-contint">2</h4>
+                  <h4 class="divider-contint">4</h4>
                 </div>
               </div>
               <div class="divider-line"></div>
@@ -220,7 +222,7 @@
             </div>
             <div class="title-wrapper">
               <div class="divider-title">
-                <h2 class="divider-title">On The Spotlight</h2>
+                <h2 class="divider-title">Mohammed Ahmed Alhazmi</h2>
               </div>
             </div>
           </div>
@@ -237,8 +239,8 @@
               </div>
               <h2 class="interview-title">Mohammed Alhazmi</h2>
               <h3 class="interview-position">SSD Manager</h3>
-              <p class="interview-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
-              <button class="btn interview-button">Read More</button>
+              <p class="interview-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p><a href="blogpost.html">
+                <button class="btn interview-button">Read More</button></a>
             </div>
           </div>
         </div>
@@ -249,7 +251,7 @@
             <div class="divider-wrapper">
               <div class="divider-square">
                 <div class="divider-smsquare">
-                  <h4 class="divider-contint">3</h4>
+                  <h4 class="divider-contint">4</h4>
                 </div>
               </div>
               <div class="divider-line"></div>
@@ -257,7 +259,7 @@
             </div>
             <div class="title-wrapper">
               <div class="divider-title">
-                <h2 class="divider-title">PRC In Depth</h2>
+                <h2 class="divider-title">Mohammed Ahmed Alhazmi</h2>
               </div>
             </div>
           </div>
@@ -338,7 +340,7 @@
             </div>
             <div class="title-wrapper">
               <div class="divider-title">
-                <h2 class="divider-title">Featured Blogs</h2>
+                <h2 class="divider-title">Mohammed Ahmed Alhazmi</h2>
               </div>
             </div>
           </div>
@@ -407,7 +409,12 @@
         </div>
       </div>
     </div>
-    <script type="text/javascript" src="js/indexAnimation.js"> </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TweenMax.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TimelineLite.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+    <script type="text/javascript" src="js/PRC-Section-Animation.js"></script>
+    <script type="text/javascript" src="js/indexAnimation.js"></script>
     <script type="text/javascript" src="js/CardSlider.js"></script>
     <script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
     <script type="text/javascript" src="js/jquery.ba-cond.min.js"></script>
@@ -415,5 +422,9 @@
     <script type="text/javascript" src="js/slider.js"></script>
     <script type="text/javascript" src="js/mo.min.js"></script>
     <script type="text/javascript" src="js/heartanimation.js"></script>
+    <!--script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js")-->
+    <!--script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.2.0/imagesloaded.pkgd.min.js")-->
+    <!--script(src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js")-->
+    <!--script(src="../js/loader.js")-->
   </body>
 </html>
