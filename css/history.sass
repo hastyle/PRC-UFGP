@@ -1,6 +1,3 @@
-//@import "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
-
-
 .timeline
   position: relative
   max-width: 800px
@@ -17,18 +14,9 @@
     top: 0
     bottom: 0
     margin-left: -2px
-    box-shadow: 0 25px 2px rgba(0, 0, 0, 0.25) inset, transparent 0 0 0, transparent 0 0 0, transparent 0 0 0, transparent 0 0 0, transparent 0 0 0
 
 .timeline--first:after
   top: 20px
-
-.timeline-last
-  position: relative
-  max-width: 800px
-  margin: 0 auto
-  padding-top: 0px
-  padding-left: 0
-  top: -20px
 
 .era
   text-align: center
@@ -43,7 +31,6 @@
   padding: 10px 20px
   border-radius: 4px
   cursor: default
-  box-shadow: 0 25px 2px rgba(0, 0, 0, 0.25) inset, transparent 0 0 0, transparent 0 0 0, transparent 0 0 0, transparent 0 0 0, transparent 0 0 0
 
 .entry
   padding: 10px 30px 40px 30px
@@ -76,19 +63,18 @@
   &:after
     content: ''
     position: absolute
-    width: 20px
-    height: 20px
-    right: -10px
+    width: 24px
+    height: 24px
+    right: -17px
     background-color: #EEEEEE
-    border: 2px solid #2e3c42
-    top: 12px
+    border: 3px solid #c31b1b
+    top: 20px
     border-radius: 50%
     z-index: 1
 
-
 .entry--right:after
   right: auto
-  left: -10px
+  left: -16px
 
 h2
   color: #525252
@@ -105,9 +91,6 @@ p
 
 li
   list-style: none
-
-.Myriad
-  font-family: "myriad-pro-condensed",sans-serif
 
 @media all and (max-width: 500px)
   .timeline:after
